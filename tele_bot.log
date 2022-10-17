@@ -62,3 +62,7 @@ ValueError: could not convert string to float: '8.81â‚¬'
 10:59:22 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
 10:59:22 PM: INFO [base.py: 198] Scheduler has been shut down
 10:59:22 PM: WARNING [updater.py: 874] Exiting immediately!
+11:22:04 PM: INFO [base.py: 166] Scheduler started
+11:22:19 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+11:22:19 PM: INFO [base.py: 198] Scheduler has been shut down
+11:22:19 PM: WARNING [updater.py: 874] Exiting immediately!
