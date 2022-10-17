@@ -1,1 +1,1 @@
-worker python3.10 gameBot.py
+bot: python3.10 gameBot.py
