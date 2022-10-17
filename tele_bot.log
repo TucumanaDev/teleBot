@@ -1,0 +1,64 @@
+10:13:24 PM: INFO [base.py: 166] Scheduler started
+10:40:17 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:40:17 PM: INFO [base.py: 198] Scheduler has been shut down
+10:40:19 PM: WARNING [updater.py: 874] Exiting immediately!
+10:40:21 PM: INFO [base.py: 166] Scheduler started
+10:41:22 PM: WARNING [dammit.py: 615] Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+10:41:22 PM: ERROR [dispatcher.py: 821] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/lian/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/lian/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 99, in get_games
+    all_games(bot, chatID)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 65, in all_games
+    current_games(game, bot, chatID)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 45, in current_games
+    price_game = get_price(games) # Obtenemos los precios mediante una funcion. El parametro de la funcion inicial es la url
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 37, in get_price
+    first_price = float("".join(x for x in first_price_text if x not in characters))
+ValueError: could not convert string to float: '8.81â‚¬'
+10:43:50 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:43:50 PM: INFO [base.py: 198] Scheduler has been shut down
+10:43:50 PM: WARNING [updater.py: 874] Exiting immediately!
+10:43:51 PM: INFO [base.py: 166] Scheduler started
+10:46:07 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:46:07 PM: INFO [base.py: 198] Scheduler has been shut down
+10:46:07 PM: WARNING [updater.py: 874] Exiting immediately!
+10:46:09 PM: INFO [base.py: 166] Scheduler started
+10:46:31 PM: WARNING [dammit.py: 615] Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+10:46:31 PM: ERROR [dispatcher.py: 821] No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/home/lian/.local/lib/python3.10/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/home/lian/.local/lib/python3.10/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 100, in get_games
+    all_games(bot, chatID)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 66, in all_games
+    current_games(game, bot, chatID)
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 46, in current_games
+    price_game = get_price(games) # Obtenemos los precios mediante una funcion. El parametro de la funcion inicial es la url
+  File "/home/lian/Escritorio/pythonProjets/botTelegram/gameBot.py", line 38, in get_price
+    first_price = float("".join(x for x in first_price_text if x not in characters))
+ValueError: could not convert string to float: '8.81â‚¬'
+10:48:22 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:48:22 PM: INFO [base.py: 198] Scheduler has been shut down
+10:48:22 PM: WARNING [updater.py: 874] Exiting immediately!
+10:48:23 PM: INFO [base.py: 166] Scheduler started
+10:50:01 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:50:01 PM: INFO [base.py: 198] Scheduler has been shut down
+10:50:01 PM: WARNING [updater.py: 874] Exiting immediately!
+10:50:26 PM: INFO [base.py: 166] Scheduler started
+10:51:47 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:51:47 PM: INFO [base.py: 198] Scheduler has been shut down
+10:51:48 PM: WARNING [updater.py: 874] Exiting immediately!
+10:51:49 PM: INFO [base.py: 166] Scheduler started
+10:52:18 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:52:18 PM: INFO [base.py: 198] Scheduler has been shut down
+10:52:19 PM: WARNING [updater.py: 874] Exiting immediately!
+10:58:37 PM: INFO [base.py: 166] Scheduler started
+10:59:22 PM: INFO [updater.py: 863] Received signal 2 (SIGINT), stopping...
+10:59:22 PM: INFO [base.py: 198] Scheduler has been shut down
+10:59:22 PM: WARNING [updater.py: 874] Exiting immediately!
