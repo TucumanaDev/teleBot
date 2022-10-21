@@ -67,7 +67,6 @@ def all_games(bot, chatID): # Llamando a todos los juegos dentro del diccionario
 def alert_games(bot, chatID): # Bucle con intervalo de tiempo para poder apreciar el cambio de precio del juego
     messag = True
     while messag:
-        log.info("Empenzando ciclo")
         find_game = None
         for game, price in best_price_game.items():
             price_game = get_price(game)
@@ -79,10 +78,8 @@ def alert_games(bot, chatID): # Bucle con intervalo de tiempo para poder aprecia
                 )
                 messag = False
                 find_game = game
-        log.info("Variable de while: {}".format(messag))
         if find_game:
             del best_price_game[find_game]
-            log.info(best_price_game)
 
 def start(update, context): # Creando funcion de comienzo
     bot = context.bot
