@@ -1,3 +1,4 @@
+from gettext import find
 import sys
 from game_links import *
 from logger_base import log
@@ -19,7 +20,6 @@ best_price_game = {
     RE2: 10.00,
     RE3: 10.00,
     detroid: 10.00,
-    ghost: 15.00,
 }
 
 # Funcion que obtiene los precios parseando la pagina web
@@ -67,18 +67,22 @@ def all_games(bot, chatID): # Llamando a todos los juegos dentro del diccionario
 def alert_games(bot, chatID): # Bucle con intervalo de tiempo para poder apreciar el cambio de precio del juego
     messag = True
     while messag:
+        log.info("Empenzando ciclo")
+        find_game = None
         for game, price in best_price_game.items():
             price_game = get_price(game)
-            if price_game <= price: 
+            if price_game <= price and price_game > 0: 
                 bot.sendMessage(
                 chat_id=chatID,
                 text="Alerta mmguevo porfin hay tremenda oferta, El precio es: {} \n" 
                 "aqui tienes el link papuh: {}".format(price_game, game)
                 )
-                close = False
-        messag = close
-        time.sleep(10)
-
+                messag = False
+                find_game = game
+        log.info("Variable de while: {}".format(messag))
+        if find_game:
+            del best_price_game[find_game]
+            log.info(best_price_game)
 
 def start(update, context): # Creando funcion de comienzo
     bot = context.bot
@@ -116,4 +120,3 @@ def main():
         
 if __name__ == "__main__":
     main()   
-    # Arreglar bucle infinito que va a tender a ser molesto cuanso se encuentre el precio deseado
